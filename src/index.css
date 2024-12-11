@@ -1,22 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --color-gray-0: 255 255 255;
-    --color-gray-10: 245 245 245;
-    --color-gray-90: 45 45 45;
-    --color-gray-100: 30 30 30;
-    --color-red-50: 255 105 105;
-    --color-red-60: 233 0 0;
+@theme {
+  --color-gray-0: rgb(255 255 255);
+  --color-gray-10: rgb(245 245 245);
+  --color-gray-90: rgb(45 45 45);
+  --color-gray-100: rgb(30 30 30);
+  --color-red-50: rgb(255 105 105);
+  --color-red-60: rgb(233 0 0);
 
-    --color-background: var(--color-gray-10);
-    --color-surface: var(--color-gray-0);
-    --color-text: var(--color-gray-100);
-    --color-primary: var(--color-red-60);
-  }
+  --color-background: var(--color-gray-10);
+  --color-surface: var(--color-gray-0);
+  --color-text: var(--color-gray-100);
+  --color-primary: var(--color-red-60);
+}
 
+@layer theme {
   @media (prefers-color-scheme: dark) {
     :root {
       --color-background: var(--color-gray-100);
